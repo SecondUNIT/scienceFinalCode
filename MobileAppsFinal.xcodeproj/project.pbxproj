@@ -13,6 +13,7 @@
 		D71B08CE1EAF984E006FE87C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D71B08CD1EAF984E006FE87C /* Assets.xcassets */; };
 		D71B08D11EAF984E006FE87C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71B08CF1EAF984E006FE87C /* LaunchScreen.storyboard */; };
 		D7EE15AA1EB249C600030F3F /* ChemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EE15A91EB249C600030F3F /* ChemViewController.swift */; };
+		D7FE76681EB24A7F00CE7BC3 /* classFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FE76671EB24A7F00CE7BC3 /* classFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D71B08D01EAF984E006FE87C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D71B08D21EAF984E006FE87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7EE15A91EB249C600030F3F /* ChemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemViewController.swift; sourceTree = "<group>"; };
+		D7FE76671EB24A7F00CE7BC3 /* classFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = classFile.swift; path = ../classFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		D71B08C51EAF984E006FE87C /* MobileAppsFinal */ = {
 			isa = PBXGroup;
 			children = (
+				D7FE76671EB24A7F00CE7BC3 /* classFile.swift */,
 				D71B08C61EAF984E006FE87C /* AppDelegate.swift */,
 				D71B08CA1EAF984E006FE87C /* Main.storyboard */,
 				D7EE15A91EB249C600030F3F /* ChemViewController.swift */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7FE76681EB24A7F00CE7BC3 /* classFile.swift in Sources */,
 				D7EE15AA1EB249C600030F3F /* ChemViewController.swift in Sources */,
 				D71B08C91EAF984E006FE87C /* ViewController.swift in Sources */,
 				D71B08C71EAF984E006FE87C /* AppDelegate.swift in Sources */,
