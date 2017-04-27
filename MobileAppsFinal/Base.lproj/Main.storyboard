@@ -156,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="3204" y="760"/>
         </scene>
-        <!--View Controller-->
+        <!--Chem View Controller-->
         <scene sceneID="k2Q-Fn-t1d">
             <objects>
-                <viewController id="xK2-nk-kqJ" sceneMemberID="viewController">
+                <viewController id="xK2-nk-kqJ" customClass="ChemViewController" customModule="MobileAppsFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LHa-YJ-A6p"/>
                         <viewControllerLayoutGuide type="bottom" id="ZrV-Lz-grJ"/>
@@ -167,12 +167,21 @@
                     <view key="view" contentMode="scaleToFill" id="UvO-fF-cgO">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brandon (My Side App)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2H1-P9-Xnk">
+                                <rect key="frame" x="267" y="196" width="234" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6UK-5A-pFz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2391" y="-503"/>
+            <point key="canvasLocation" x="2388" y="-505"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nge-bv-yw7">
