@@ -58,11 +58,11 @@
 		D71B08C51EAF984E006FE87C /* MobileAppsFinal */ = {
 			isa = PBXGroup;
 			children = (
-				D7FE76671EB24A7F00CE7BC3 /* classFile.swift */,
 				D71B08C61EAF984E006FE87C /* AppDelegate.swift */,
+				D7FE76671EB24A7F00CE7BC3 /* classFile.swift */,
 				D71B08CA1EAF984E006FE87C /* Main.storyboard */,
-				D7EE15A91EB249C600030F3F /* ChemViewController.swift */,
 				D71B08C81EAF984E006FE87C /* ViewController.swift */,
+				D7EE15A91EB249C600030F3F /* ChemViewController.swift */,
 				D71B08CD1EAF984E006FE87C /* Assets.xcassets */,
 				D71B08CF1EAF984E006FE87C /* LaunchScreen.storyboard */,
 				D71B08D21EAF984E006FE87C /* Info.plist */,
