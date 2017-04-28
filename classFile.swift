@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+class Equation
+{
+    var equiName: String!
+    var equation: String!
+    
+    init(equiName: String, equation: String)
+    {
+        self.equiName = equiName
+        self.equation = equation
+    }
+
+init()
+{
+        equiName = "Placeholder Name"
+    equation = "Placeholder equation"
+}
+
+}
