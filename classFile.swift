@@ -7,3 +7,26 @@
 //
 
 import Foundation
+
+class Element {
+    var name : String!
+    var atomicNumber: Int!
+    var atomicWeight: Int!
+    //var modelImage: UIImage! it aint working idk y
+    var infoUrl: String!
+    
+//    init (name: String!, atomicNumber: Int!, modelImage: UIImage!, infoUrl: String!)
+//    {
+//        self.atomicNumber = atomicNumber
+//        self.atomicWeight = atomicWeight
+//        self.modelImage = modelImage
+//        self.infoUrl = infoUrl
+//    }
+    init ()
+        {
+            atomicNumber = 12
+            atomicWeight = 12
+//            modelImage = 
+//            infoUrl =
+        }
+}
