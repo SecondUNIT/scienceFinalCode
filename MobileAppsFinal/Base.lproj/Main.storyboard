@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="903.125" y="138.8671875"/>
         </scene>
-        <!--View Controller-->
+        <!--Home Page View Controller-->
         <scene sceneID="pjp-SI-hEa">
             <objects>
-                <viewController id="3X7-xS-4KP" sceneMemberID="viewController">
+                <viewController id="3X7-xS-4KP" customClass="HomePageViewController" customModule="MobileAppsFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mti-EO-dyi"/>
                         <viewControllerLayoutGuide type="bottom" id="DuZ-xH-3jF"/>
@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="1654" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--Equation View Controller-->
         <scene sceneID="lpY-ZC-Qf0">
             <objects>
-                <viewController id="1Sv-N6-0NE" sceneMemberID="viewController">
+                <viewController id="1Sv-N6-0NE" customClass="EquationViewController" customModule="MobileAppsFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LGf-QW-H83"/>
                         <viewControllerLayoutGuide type="bottom" id="ICr-tJ-pZc"/>
@@ -129,10 +129,10 @@
             </objects>
             <point key="canvasLocation" x="2425.78125" y="759.9609375"/>
         </scene>
-        <!--View Controller-->
+        <!--Equation Profile View Controller-->
         <scene sceneID="z0a-Kw-fyr">
             <objects>
-                <viewController id="xuG-gV-NFB" sceneMemberID="viewController">
+                <viewController id="xuG-gV-NFB" customClass="EquationProfileViewController" customModule="MobileAppsFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IyQ-PN-Soz"/>
                         <viewControllerLayoutGuide type="bottom" id="NtF-eb-aX7"/>
@@ -168,20 +168,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brandon (My Side App)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2H1-P9-Xnk">
-                                <rect key="frame" x="267" y="196" width="234" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="paa-U6-hBG">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Vbz-pK-IFb">
+                                        <rect key="frame" x="0.0" y="28" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vbz-pK-IFb" id="fTR-dR-FjL">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="8jS-Xk-XNJ" kind="show" id="vpj-5h-N4Q"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZrV-Lz-grJ" firstAttribute="top" secondItem="paa-U6-hBG" secondAttribute="bottom" id="Rp7-Dy-Qj5"/>
+                            <constraint firstItem="paa-U6-hBG" firstAttribute="leading" secondItem="UvO-fF-cgO" secondAttribute="leading" id="oLc-rw-15u"/>
+                            <constraint firstItem="paa-U6-hBG" firstAttribute="top" secondItem="UvO-fF-cgO" secondAttribute="top" id="wnv-ef-NR5"/>
+                            <constraint firstAttribute="trailing" secondItem="paa-U6-hBG" secondAttribute="trailing" id="wpK-GP-JPo"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6UK-5A-pFz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2388" y="-505"/>
+            <point key="canvasLocation" x="2387.5" y="-505.07812499999994"/>
+        </scene>
+        <!--Element Profile View Controller-->
+        <scene sceneID="IsU-zf-Ljv">
+            <objects>
+                <viewController id="8jS-Xk-XNJ" customClass="ElementProfileViewController" customModule="MobileAppsFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oRh-g6-aHZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tei-2q-CIV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0ho-fq-Pl8">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxw-Pl-Bc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3158" y="-498"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nge-bv-yw7">

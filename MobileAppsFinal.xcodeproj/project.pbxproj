@@ -13,6 +13,10 @@
 		D71B08CE1EAF984E006FE87C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D71B08CD1EAF984E006FE87C /* Assets.xcassets */; };
 		D71B08D11EAF984E006FE87C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71B08CF1EAF984E006FE87C /* LaunchScreen.storyboard */; };
 		D7EE15AA1EB249C600030F3F /* ChemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EE15A91EB249C600030F3F /* ChemViewController.swift */; };
+		D7F6785B1EB38AF100AF1BD2 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F6785A1EB38AF100AF1BD2 /* HomePageViewController.swift */; };
+		D7F6785D1EB38B3C00AF1BD2 /* EquationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F6785C1EB38B3C00AF1BD2 /* EquationViewController.swift */; };
+		D7F6785F1EB38B7100AF1BD2 /* EquationProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F6785E1EB38B7100AF1BD2 /* EquationProfileViewController.swift */; };
+		D7F678611EB38BBC00AF1BD2 /* ElementProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F678601EB38BBC00AF1BD2 /* ElementProfileViewController.swift */; };
 		D7FE76681EB24A7F00CE7BC3 /* classFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FE76671EB24A7F00CE7BC3 /* classFile.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +29,10 @@
 		D71B08D01EAF984E006FE87C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D71B08D21EAF984E006FE87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7EE15A91EB249C600030F3F /* ChemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemViewController.swift; sourceTree = "<group>"; };
+		D7F6785A1EB38AF100AF1BD2 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		D7F6785C1EB38B3C00AF1BD2 /* EquationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquationViewController.swift; sourceTree = "<group>"; };
+		D7F6785E1EB38B7100AF1BD2 /* EquationProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquationProfileViewController.swift; sourceTree = "<group>"; };
+		D7F678601EB38BBC00AF1BD2 /* ElementProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementProfileViewController.swift; sourceTree = "<group>"; };
 		D7FE76671EB24A7F00CE7BC3 /* classFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = classFile.swift; path = ../classFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +69,10 @@
 				D7FE76671EB24A7F00CE7BC3 /* classFile.swift */,
 				D71B08C61EAF984E006FE87C /* AppDelegate.swift */,
 				D71B08CA1EAF984E006FE87C /* Main.storyboard */,
+				D7F678601EB38BBC00AF1BD2 /* ElementProfileViewController.swift */,
+				D7F6785E1EB38B7100AF1BD2 /* EquationProfileViewController.swift */,
+				D7F6785C1EB38B3C00AF1BD2 /* EquationViewController.swift */,
+				D7F6785A1EB38AF100AF1BD2 /* HomePageViewController.swift */,
 				D7EE15A91EB249C600030F3F /* ChemViewController.swift */,
 				D71B08C81EAF984E006FE87C /* ViewController.swift */,
 				D71B08CD1EAF984E006FE87C /* Assets.xcassets */,
@@ -143,9 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F6785D1EB38B3C00AF1BD2 /* EquationViewController.swift in Sources */,
 				D7FE76681EB24A7F00CE7BC3 /* classFile.swift in Sources */,
 				D7EE15AA1EB249C600030F3F /* ChemViewController.swift in Sources */,
+				D7F678611EB38BBC00AF1BD2 /* ElementProfileViewController.swift in Sources */,
 				D71B08C91EAF984E006FE87C /* ViewController.swift in Sources */,
+				D7F6785B1EB38AF100AF1BD2 /* HomePageViewController.swift in Sources */,
+				D7F6785F1EB38B7100AF1BD2 /* EquationProfileViewController.swift in Sources */,
 				D71B08C71EAF984E006FE87C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
