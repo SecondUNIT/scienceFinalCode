@@ -31,3 +31,8 @@ class Element {
 //            infoUrl =
         }
 }
+
+class Equation {
+    var equiName:String!
+    var equation:String!
+}
