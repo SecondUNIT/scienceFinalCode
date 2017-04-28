@@ -30,3 +30,4 @@ class Element {
 //            infoUrl =
         }
 }
+
