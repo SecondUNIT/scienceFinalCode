@@ -32,3 +32,7 @@ class Element {
         }
 }
 
+class equation
+{
+    
+}
