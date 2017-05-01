@@ -28,11 +28,23 @@ class Element {
             atomicNumber = 12
             atomicWeight = 12
 //            modelImage = 
-//            infoUrl =
+            infoUrl = "Jamm Samsa"
         }
 }
 
 class Equation {
     var equiName:String!
     var equation:String!
+    
+    init (equiName:String!, equation:String!)
+    {
+        self.equation = equation
+        self.equiName = equiName
+        
+    }
+    init() {
+        equiName = "Placeholder"
+        equation = "Placeholder"
+    }
 }
+
