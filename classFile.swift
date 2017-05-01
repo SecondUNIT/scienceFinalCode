@@ -32,7 +32,19 @@ class Element {
         }
 }
 
-class equation
-{
+class Equation {
+    var equiName:String!
+    var equation:String!
     
+    init (equiName:String!, equation:String!)
+    {
+        self.equation = equation
+        self.equiName = equiName
+        
+    }
+    init() {
+        equiName = "Placeholder"
+        equation = "Placeholder"
+    }
 }
+
