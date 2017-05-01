@@ -28,7 +28,7 @@ class Element {
             atomicNumber = 12
             atomicWeight = 12
 //            modelImage = 
-//            infoUrl =
+            infoUrl = "Jamm Samsa"
         }
 }
 
