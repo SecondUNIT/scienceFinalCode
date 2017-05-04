@@ -10,6 +10,10 @@ import Foundation
 import UIKit
 
 
+class Class {
+    
+}
+
 class Element {
     var name : String!
     var atomicNumber: Int!
