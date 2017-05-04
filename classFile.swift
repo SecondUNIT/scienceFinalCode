@@ -12,21 +12,20 @@ import Foundation
 class Element {
     var name : String!
     var atomicNumber: Int!
-    var atomicWeight: Int!
+    var atomicWeight: Float!
     //var modelImage: UIImage! it aint working idk y
     var infoUrl: String!
     
-//    init (name: String!, atomicNumber: Int!, modelImage: UIImage!, infoUrl: String!)
-//    {
-//        self.atomicNumber = atomicNumber
-//        self.atomicWeight = atomicWeight
-//        self.modelImage = modelImage
-//        self.infoUrl = infoUrl
-//    }
+    init (name: String!, atomicNumber: Int!, atomicWeight: Float!, infoUrl: String!)
+    {
+        self.atomicNumber = atomicNumber
+        self.atomicWeight = atomicWeight
+        self.infoUrl = infoUrl
+    }
     init ()
         {
             atomicNumber = 12
-            atomicWeight = 12
+            atomicWeight = 12.001
 //            modelImage = 
             infoUrl = "Jamm Samsa"
         }
