@@ -128,11 +128,11 @@ class ChemViewController: UIViewController {
         let element111 = Element(name: "Roentgenium", atomicNumber: 111, atomicWeight: 272, modelImage: #imageLiteral(resourceName: "unununium"), infoUrl: "")
         let element112 = Element(name: "Copernicium", atomicNumber: 112, atomicWeight: 285, modelImage: #imageLiteral(resourceName: "ununbium"), infoUrl: "")
         let element113 = Element(name: "Ununtrium (Nihonium)", atomicNumber: 113, atomicWeight: 286, modelImage: #imageLiteral(resourceName: "hydrogen"), infoUrl: "")
-        let element114 = Element(name: "Flerovium", atomicNumber: 114, atomicWeight: 289, modelImage: #imageLiteral(resourceName: "hydrogen"), infoUrl: "")
-        let element115 = Element(name: "Ununpentium (Moscovium)", atomicNumber: 115, atomicWeight: 288, modelImage: #imageLiteral(resourceName: "hydrogen"), infoUrl: "")
-        let element116 = Element(name: "Livermorium", atomicNumber: 116, atomicWeight: 292, modelImage: #imageLiteral(resourceName: "hydrogen"), infoUrl: "")
-        let element117 = Element(name: "Ununseptium (Tennessine)", atomicNumber: 117, atomicWeight: 294, modelImage: #imageLiteral(resourceName: "hydrogen"), infoUrl: "")
-        let element118 = Element(name: "Ununoctium (Oganesson)", atomicNumber: 118, atomicWeight: 294, modelImage: #imageLiteral(resourceName: "hydrogen"), infoUrl: "")
+        let element114 = Element(name: "Flerovium", atomicNumber: 114, atomicWeight: 289, modelImage: #imageLiteral(resourceName: "flerovium"), infoUrl: "")
+        let element115 = Element(name: "Ununpentium (Moscovium)", atomicNumber: 115, atomicWeight: 288, modelImage: #imageLiteral(resourceName: "ununpentium"), infoUrl: "")
+        let element116 = Element(name: "Livermorium", atomicNumber: 116, atomicWeight: 292, modelImage: #imageLiteral(resourceName: "livermorium"), infoUrl: "")
+        let element117 = Element(name: "Ununseptium (Tennessine)", atomicNumber: 117, atomicWeight: 294, modelImage: #imageLiteral(resourceName: "tennessine"), infoUrl: "")
+        let element118 = Element(name: "Ununoctium (Oganesson)", atomicNumber: 118, atomicWeight: 294, modelImage: #imageLiteral(resourceName: "oganesson"), infoUrl: "")
         
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
         {
