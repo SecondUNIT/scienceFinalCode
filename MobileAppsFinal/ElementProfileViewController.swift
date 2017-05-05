@@ -10,6 +10,9 @@ import UIKit
 
 class ElementProfileViewController: UIViewController {
 
+    
+    
+    var passedElement = Element()
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -10,6 +10,7 @@ import UIKit
 
 class ChemViewController: UIViewController {
     
+    @IBOutlet weak var ElementTableView: UITableView!
     var elements = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -112,8 +113,7 @@ class ChemViewController: UIViewController {
         let element95 = Element(name: "Americium", atomicNumber: 95, atomicWeight: 243, modelImage: #imageLiteral(resourceName: "americium"), infoUrl: "")
         let element96 = Element(name: "Curium", atomicNumber: 96, atomicWeight: 247, modelImage: #imageLiteral(resourceName: "curium"), infoUrl: "")
         let element97 = Element(name: "Berkelium", atomicNumber: 97, atomicWeight: 247, modelImage: #imageLiteral(resourceName: "berkelium"), infoUrl: "")
-        let element98 = Element(name: "Californium", atomicNumber: 98, atomicWeight: 251, modelImage:
-            #imageLiteral(resourceName: "californium"), infoUrl: "")
+        let element98 = Element(name: "Californium", atomicNumber: 98, atomicWeight: 251, modelImage: #imageLiteral(resourceName: "californium"), infoUrl: "")
         let element99 = Element(name: "Einsteinium", atomicNumber: 99, atomicWeight: 252, modelImage: #imageLiteral(resourceName: "einsteinium"), infoUrl: "")
         let element100 = Element(name: "Fermium", atomicNumber: 100, atomicWeight: 257, modelImage: #imageLiteral(resourceName: "fermium"), infoUrl: "")
         let element101 = Element(name: "Mendelevium", atomicNumber: 101, atomicWeight: 258, modelImage: #imageLiteral(resourceName: "mendelevium"), infoUrl: "")
@@ -135,6 +135,8 @@ class ChemViewController: UIViewController {
         let element117 = Element(name: "Ununseptium (Tennessine)", atomicNumber: 117, atomicWeight: 294, modelImage: #imageLiteral(resourceName: "tennessine"), infoUrl: "")
         let element118 = Element(name: "Ununoctium (Oganesson)", atomicNumber: 118, atomicWeight: 294, modelImage: #imageLiteral(resourceName: "oganesson"), infoUrl: "")
         
+        var Elements = [element1, element2, element3, element4, element5, element6, element7, element8, element9, element10, element11, element12, element13, element14, element15, element16, element17, element18, element19, element20, element21, element22, element23, element24, element25, element26, element27, element28,  element29, element30, element31, element32, element33, element34, element35, element36, element37, element38, element39, element40, element41, element42, element43, element44, element45, element46, element47, element48, element49, element50, element51, element52, element53, element54, element55, element56, element57, element58, element59, element60,element61, element62, element63, element64, element65, element66, element67, element68, element69, element70,element71, element72, element73, element74, element75, element76, element77, element78, element79, element80,element81, element82, element83, element84, element85, element86, element87, element88, element89, element90,element91, element92, element93, element94, element95, element96, element97, element98, element99, element100, element101, element102, element103, element104, element105, element106, element107, element108, element109, element110, element111, element112, element113, element114, element115, element116, element117, element118]
+        
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
         {
             return elements.count
@@ -142,9 +144,9 @@ class ChemViewController: UIViewController {
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
         {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")
-            //let currentCollege = elements[indexPath.row]
-            //cell?.textLabel?.text = currentCollege.name
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ElementCell")
+            let currentElement = Elements[indexPath.row]
+            cell?.textLabel?.text = currentElement.name
             return cell!
         }
         
@@ -152,8 +154,8 @@ class ChemViewController: UIViewController {
         func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             
             let nvc = segue.destination as! ElementProfileViewController
-            //let currentCollege = elements[(collegeTableView.indexPathForSelectedRow?.row)!]
-            //nvc.passedCollege = currentCollege
+            let currentElement = Elements[(ElementTableView.indexPathForSelectedRow?.row)!]
+            nvc.passedElement = currentElement
 
     }
 
