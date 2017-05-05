@@ -112,7 +112,8 @@ class ChemViewController: UIViewController {
         let element95 = Element(name: "Americium", atomicNumber: 95, atomicWeight: 243, modelImage: #imageLiteral(resourceName: "americium"), infoUrl: "")
         let element96 = Element(name: "Curium", atomicNumber: 96, atomicWeight: 247, modelImage: #imageLiteral(resourceName: "curium"), infoUrl: "")
         let element97 = Element(name: "Berkelium", atomicNumber: 97, atomicWeight: 247, modelImage: #imageLiteral(resourceName: "berkelium"), infoUrl: "")
-        let element98 = Element(name: "Californium", atomicNumber: 98, atomicWeight: 251, modelImage: #imageLiteral(resourceName: "californium"), infoUrl: "")
+        let element98 = Element(name: "Californium", atomicNumber: 98, atomicWeight: 251, modelImage:
+            #imageLiteral(resourceName: "californium"), infoUrl: "")
         let element99 = Element(name: "Einsteinium", atomicNumber: 99, atomicWeight: 252, modelImage: #imageLiteral(resourceName: "einsteinium"), infoUrl: "")
         let element100 = Element(name: "Fermium", atomicNumber: 100, atomicWeight: 257, modelImage: #imageLiteral(resourceName: "fermium"), infoUrl: "")
         let element101 = Element(name: "Mendelevium", atomicNumber: 101, atomicWeight: 258, modelImage: #imageLiteral(resourceName: "mendelevium"), infoUrl: "")
@@ -127,7 +128,7 @@ class ChemViewController: UIViewController {
         let element110 = Element(name: "Darmstadtium", atomicNumber: 110, atomicWeight: 271, modelImage: #imageLiteral(resourceName: "ununnilium"), infoUrl: "")
         let element111 = Element(name: "Roentgenium", atomicNumber: 111, atomicWeight: 272, modelImage: #imageLiteral(resourceName: "unununium"), infoUrl: "")
         let element112 = Element(name: "Copernicium", atomicNumber: 112, atomicWeight: 285, modelImage: #imageLiteral(resourceName: "ununbium"), infoUrl: "")
-        let element113 = Element(name: "Ununtrium (Nihonium)", atomicNumber: 113, atomicWeight: 286, modelImage: #imageLiteral(resourceName: "hydrogen"), infoUrl: "")
+        let element113 = Element(name: "Ununtrium (Nihonium)", atomicNumber: 113, atomicWeight: 286, modelImage: #imageLiteral(resourceName: "ununtrium"), infoUrl: "")
         let element114 = Element(name: "Flerovium", atomicNumber: 114, atomicWeight: 289, modelImage: #imageLiteral(resourceName: "flerovium"), infoUrl: "")
         let element115 = Element(name: "Ununpentium (Moscovium)", atomicNumber: 115, atomicWeight: 288, modelImage: #imageLiteral(resourceName: "ununpentium"), infoUrl: "")
         let element116 = Element(name: "Livermorium", atomicNumber: 116, atomicWeight: 292, modelImage: #imageLiteral(resourceName: "livermorium"), infoUrl: "")
