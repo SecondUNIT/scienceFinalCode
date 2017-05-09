@@ -9,10 +9,10 @@
 import UIKit
 
 class EquationViewController: UIViewController {
-var Equations = [Equation]()
+    var ChemEquations = [Equation]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let chemEquation1 = Equation(equiName: "Density", equation: "D M/V")
         let chemEquation2 = Equation(equiName: "% Yield", equation: "(Acual Yield/theoretical yield)X100%")
         let chemEquation3 = Equation(equiName: "Molarity", equation: "Moles of solute/Liters of solution")
@@ -49,7 +49,19 @@ var Equations = [Equation]()
         let chemEquation34 = Equation(equiName: "Relationship between Kᵖ and Kᵏ", equation: "Kᵖ=Kᶜ(0.0821*T)∆n")
         let chemEquation35 = Equation(equiName: "Equilibrium for overall reaction is given by the product of equilibrium constants for individual reactions", equation: "KᶜK'ᶜK''ᶜ")
         let chemEquation36 = Equation(equiName: "Ion-product constant of water", equation: "Kw=[H+][OH-]")
-        let chemEquation37 = Equation(equiName: "Defininition of pH of a solution", equation: "pH=-log[OH-]")
+        let chemEquation37 = Equation(equiName: "Defininition of pH of a solution", equation: "pH=-log[OH+]")
+        let chemEquation38 = Equation(equiName: "Defininition of pOH of a solution", equation: "pOH=-log[OH-]")
+        let chemEquation39 = Equation(equiName: "Another form of ion-product constant of water", equation: "pH+pOH=14.00")
+        let chemEquation40 = Equation(equiName: "Percent ionization", equation: "(ionized acid concentration at equilibrium/initial concentration of acid)*100")
+        let chemEquation41 = Equation(equiName: "Relationship between the acid and base ionization of a conjugate acid-base pair", equation: "KᵃKᵇ=Kʷ")
+        let chemEquation42 = Equation(equiName: "Henderson-Hasselbach equation", equation: "pH=pKᵃ+log[conjugate base]/[acid]")
+        let chemEquation43 = Equation(equiName: "Free-energy change at constant temperature", equation: "∆G=∆H-T∆S")
+        let chemEquation44 = Equation(equiName: "Relationship between standard free-energy change and the equilibium constant", equation: "∆Gᵒ=-RTlnK")
+        let chemEquation45 = Equation(equiName: "Standard emf of an electrochemical cell", equation: "Eᵒcell=Eᵒox-Eᵒred=Eᵒcathode-Eᵒanode")
+        let chemEquation46 = Equation(equiName: "Relationship of the standard emf of the cell to the equilibrium constant", equation: "Eᵒcell=(RT/nF)lnK")
+        let chemEquation47 = Equation(equiName: "Nernst equation", equation: "E=Eᵒ-(RT/nF)lnQ")
+        let chemEquation48 = Equation(equiName: "Relationship between mass defect and energy released", equation: "∆E=(∆m)c²")
+        ChemEquations = [chemEquation1,chemEquation2,chemEquation3,chemEquation4,chemEquation5,chemEquation6,chemEquation7,chemEquation8,chemEquation9,chemEquation10,chemEquation11,chemEquation12,chemEquation13,chemEquation14,chemEquation15,chemEquation16,chemEquation17,chemEquation18,chemEquation19,chemEquation20,chemEquation21,chemEquation22,chemEquation23,chemEquation24,chemEquation25,chemEquation26,chemEquation27,chemEquation28,chemEquation29,chemEquation30,chemEquation31,chemEquation32,chemEquation33,chemEquation34,chemEquation35,chemEquation36,chemEquation37,chemEquation38,chemEquation39,chemEquation40,chemEquation41,chemEquation42,chemEquation43,chemEquation44,chemEquation45,chemEquation46,chemEquation47,chemEquation48]
         
     }
     
