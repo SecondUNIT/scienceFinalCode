@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Class {
+class Subject {
     var subject:String!
     var equations: [Equation]
     
