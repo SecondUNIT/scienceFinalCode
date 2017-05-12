@@ -61,8 +61,33 @@ class EquationViewController: UIViewController {
         let chemEquation46 = Equation(equiName: "Relationship of the standard emf of the cell to the equilibrium constant", equation: "Eᵒcell=(RT/nF)lnK")
         let chemEquation47 = Equation(equiName: "Nernst equation", equation: "E=Eᵒ-(RT/nF)lnQ")
         let chemEquation48 = Equation(equiName: "Relationship between mass defect and energy released", equation: "∆E=(∆m)c²")
+        
         ChemEquations = [chemEquation1,chemEquation2,chemEquation3,chemEquation4,chemEquation5,chemEquation6,chemEquation7,chemEquation8,chemEquation9,chemEquation10,chemEquation11,chemEquation12,chemEquation13,chemEquation14,chemEquation15,chemEquation16,chemEquation17,chemEquation18,chemEquation19,chemEquation20,chemEquation21,chemEquation22,chemEquation23,chemEquation24,chemEquation25,chemEquation26,chemEquation27,chemEquation28,chemEquation29,chemEquation30,chemEquation31,chemEquation32,chemEquation33,chemEquation34,chemEquation35,chemEquation36,chemEquation37,chemEquation38,chemEquation39,chemEquation40,chemEquation41,chemEquation42,chemEquation43,chemEquation44,chemEquation45,chemEquation46,chemEquation47,chemEquation48]
         
+        let bioEquation1 = Equation(equiName:"Standard Error" ,equation:"SEₓ=s/√n")
+        let bioEquation2 = Equation(equiName: "Mean",equation: "Sum of all data points divided by number of data points")
+        let bioEquation3 = Equation(equiName: "Standard Deviation", equation: "S=√Σ(xi-x)²/n-1")
+        let bioEquation4 = Equation(equiName: "Chi-Square", equation: "x²=Σ((o-e)²/e)")
+        let bioEquation5 = Equation(equiName: "Laws of Probablity-1st Equation", equation: "A and B mutually exclusive: P(A or B)=P(A)+P(B)")
+        let bioEquation6 = Equation(equiName: "Laws of Probability-2nd Eqation", equation: "A and B independant: P(A and B)=P(A)*P(B)")
+        let bioEquation7 = Equation(equiName: "Hardy-Weinberg Equations-1st Equation", equation: "p²+2pq+p²=1")
+        let bioEquation8 = Equation(equiName: "Hardy-Weinberg Equations=2nd Equation", equation: "p+q=1")
+        let bioEquation9 = Equation(equiName: "Rate", equation: "dY/dt")
+        let bioEquation10 = Equation(equiName: "Population Growth", equation: "dN/dt=B-D")
+        let bioEquation11 = Equation(equiName: "Exponential Growth", equation: "dN/dt=rᵐᵃˣN(K-N/K)")
+        let bioEquation12 = Equation(equiName: "Logistic Growth", equation: "dN/dt=rᵐᵃˣN(K-N/K)")
+        let bioEquation13 = Equation(equiName: "Primary Productivity Calculation-Part 1", equation: "mg O₂/Lx0.698 = mLO₂/L")
+        let bioEquation14 = Equation(equiName: "Primary Productivity Calculation-Part 2", equation: "mL O₂/Lx0.536 = mg Carbon fixed/L")
+        let bioEquation15 = Equation(equiName: "Volume of a Sphere", equation: "V=4/3 π r³")
+        let bioEquation16 = Equation(equiName: "Volume of a Cube", equation: "V=l*w*h")
+        let bioEquation17 = Equation(equiName: "Volume of a Column", equation: "V=πr²h")
+        let bioEquation18 = Equation(equiName: "Surface Area of a Sphere", equation: "A=4πr²")
+        let bioEquation19 = Equation(equiName: "Surface Area of a Cube", equation: "A=6a")
+        let bioEquation20 = Equation(equiName: "Surface Area of a Rectangular Solid", equation: "A=Σ")
+    
+    
+    
+    
     }
     
 }
