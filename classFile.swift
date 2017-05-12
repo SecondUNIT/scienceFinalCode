@@ -9,9 +9,26 @@
 import Foundation
 import UIKit
 
-
-class Class {
+class Subject {
+    var name:String!
+    var equations: [Equation]
     
+    init(name:String!, equations: [Equation]) {
+        self.name = name
+        self.equations = equations
+    }
+    
+    init()
+    {
+        self.name = ""
+        self.equations = [Equation()]
+    }    
+   
+    init(name:String!)
+    {
+        self.name = ""
+        self.equations = [Equation()]
+    }
 }
 
 class Element {
@@ -29,12 +46,12 @@ class Element {
         self.infoUrl = infoUrl
     }
     init ()
-        {
-            atomicNumber = 12
-            atomicWeight = 12.001
-            modelImage = #imageLiteral(resourceName: "hydrogen")
-            infoUrl = "Jamm Samsa"
-        }
+    {
+        atomicNumber = 12
+        atomicWeight = 12.001
+        modelImage = #imageLiteral(resourceName: "hydrogen")
+        infoUrl = "Jamm Samsa"
+    }
 }
 
 class Equation {

@@ -114,7 +114,7 @@
 				TargetAttributes = {
 					D71B08C21EAF984E006FE87C = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = THDDE27XR6;
+						DevelopmentTeam = V6FJB5K26U;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -287,10 +287,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = THDDE27XR6;
+				DEVELOPMENT_TEAM = V6FJB5K26U;
 				INFOPLIST_FILE = MobileAppsFinal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.jhhs.617025.MobileAppsFinal2;
+				PRODUCT_BUNDLE_IDENTIFIER = org.jhhs.617025.MobileAppsFinal4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -300,10 +300,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = THDDE27XR6;
+				DEVELOPMENT_TEAM = V6FJB5K26U;
 				INFOPLIST_FILE = MobileAppsFinal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.jhhs.617025.MobileAppsFinal2;
+				PRODUCT_BUNDLE_IDENTIFIER = org.jhhs.617025.MobileAppsFinal4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

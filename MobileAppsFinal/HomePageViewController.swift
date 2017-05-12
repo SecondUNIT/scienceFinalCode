@@ -9,9 +9,17 @@
 import UIKit
 
 class HomePageViewController: UIViewController {
+    
+    @IBOutlet weak var subjectLabel: UILabel!
+    //buttons will be actions, but rn im too lazy to change any of the button attributes or shit so fuck that shit
+    
+    var selectedSubject = Subject()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = selectedSubject.name
+        subjectLabel.text = selectedSubject.name
         
     }
     
