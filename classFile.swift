@@ -10,13 +10,24 @@ import Foundation
 import UIKit
 
 class Subject {
-    var subject:String!
+    var name:String!
     var equations: [Equation]
     
-    init(subject:String!, equations: [Equation]) {
-        self.subject = "Subject1"
+    init(name:String!, equations: [Equation]) {
+        self.name = name
         self.equations = equations
-        
+    }
+    
+    init()
+    {
+        self.name = ""
+        self.equations = [Equation()]
+    }    
+   
+    init(name:String!)
+    {
+        self.name = ""
+        self.equations = [Equation()]
     }
 }
 

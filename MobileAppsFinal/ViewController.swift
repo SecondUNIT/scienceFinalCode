@@ -16,9 +16,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let subjectOne = Subject(subject: "Chemistry", equations: [Equation()])
-        let subjectTwo = Subject(subject: "Biology", equations: [Equation()])
-        let subjectThree = Subject(subject: "Physics", equations: [Equation()])
+        let subjectOne = Subject(name: "Chemistry", equations: [Equation()])
+        let subjectTwo = Subject(name: "Biology", equations: [Equation()])
+        let subjectThree = Subject(name: "Physics", equations: [Equation()])
         
         Subjects = [subjectOne, subjectTwo, subjectThree]
     }
@@ -30,12 +30,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "subjectCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell1")
         let currentSubject = Subjects[indexPath.row]
-        cell?.textLabel?.text = currentSubject.subject
+        cell?.textLabel?.text = currentSubject.name
         return cell!
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nvc = segue.destination as! HomePageViewController
+        let currentSubject = Subjects[(tableView1.indexPathForSelectedRow?.row)!]
+        nvc.selectedSubject = currentSubject
+    }
 
 }
 
