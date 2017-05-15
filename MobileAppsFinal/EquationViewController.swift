@@ -10,6 +10,7 @@ import UIKit
 
 class EquationViewController: UIViewController {
     var ChemEquations = [Equation]()
+    var BioEquations = [Equation]() //WARNING THIS PROBABLY WONT WORK ALONE MOIST LIKELY NEEDS AN IF STATEment
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -85,7 +86,7 @@ class EquationViewController: UIViewController {
         let bioEquation19 = Equation(equiName: "Surface Area of a Cube", equation: "A=6a")
         let bioEquation20 = Equation(equiName: "Surface Area of a Rectangular Solid", equation: "A=Σ")
     
-    
+    BioEquations = [bioEquation1,bioEquation2,bioEquation3,bioEquation4,bioEquation5,bioEquation6,bioEquation7,bioEquation8,bioEquation9,bioEquation10,bioEquation11,bioEquation12,bioEquation13,bioEquation14,bioEquation15,bioEquation16,bioEquation17,bioEquation18,bioEquation19,bioEquation20]
     
     
     }
