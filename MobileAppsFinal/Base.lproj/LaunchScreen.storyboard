@@ -39,13 +39,20 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Papierschiff" translatesAutoresizingMaskIntoConstraints="NO" id="iIc-fm-QUb">
+                                <rect key="frame" x="127" y="198" width="515" height="227"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="iIc-fm-QUb" secondAttribute="trailing" constant="106" id="6iO-d1-tqP"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="dHL-qS-knG" secondAttribute="bottom" constant="833.5" id="8ka-ud-Jcy"/>
                             <constraint firstItem="dHL-qS-knG" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="104" id="8tg-a9-wwd"/>
                             <constraint firstItem="dHL-qS-knG" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="49" id="MRm-Dc-BLA"/>
+                            <constraint firstItem="iIc-fm-QUb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="107" id="NWg-YZ-n4h"/>
+                            <constraint firstItem="iIc-fm-QUb" firstAttribute="top" secondItem="dHL-qS-knG" secondAttribute="bottom" constant="7.5" id="QKd-tt-kvV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dHL-qS-knG" secondAttribute="trailing" constant="49" id="hKr-nu-df2"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="iIc-fm-QUb" secondAttribute="bottom" constant="599" id="utO-Qd-5hR"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -54,4 +61,7 @@
             <point key="canvasLocation" x="52.34375" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Papierschiff" width="499" height="204"/>
+    </resources>
 </document>
