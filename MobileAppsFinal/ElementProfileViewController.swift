@@ -28,7 +28,7 @@ class ElementProfileViewController: UIViewController {
 
     }
     @IBAction func showWebpage(_ sender: Any) {
-        let url = "https://" + "\(passedElement.infoUrl!)"
+        let url = "\(passedElement.infoUrl!)"
         let myUrl = URL(string: url)
         let safariVC = SFSafariViewController(url: myUrl!)
         present(safariVC, animated: true, completion: nil)
