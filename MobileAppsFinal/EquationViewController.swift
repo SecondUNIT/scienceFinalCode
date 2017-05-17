@@ -8,7 +8,9 @@
 
 import UIKit
 
-class EquationViewController: UIViewController {
+class EquationViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var tableViewOutlet: UITableView!
+   
     var ChemEquations = [Equation]()
     var BioEquations = [Equation]() //WARNING THIS PROBABLY WONT WORK ALONE MOIST LIKELY NEEDS AN IF STATEment
     override func viewDidLoad() {
@@ -88,7 +90,25 @@ class EquationViewController: UIViewController {
     
     BioEquations = [bioEquation1,bioEquation2,bioEquation3,bioEquation4,bioEquation5,bioEquation6,bioEquation7,bioEquation8,bioEquation9,bioEquation10,bioEquation11,bioEquation12,bioEquation13,bioEquation14,bioEquation15,bioEquation16,bioEquation17,bioEquation18,bioEquation19,bioEquation20]
     
+        
+      if currentSubject = biology
+      {
+        
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+        {
+            return BioEquations.count
+        }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+        {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Equation Cell")
+            let currentCollege = College[indexPath.row]
+            cell?.textLabel?.text = currentCollege.name
+            cell?.detailTextLabel?.text = 
+       return cell!
+        }
     
-    }
+        }
+        }
     
 }
