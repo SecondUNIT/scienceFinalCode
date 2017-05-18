@@ -9,8 +9,9 @@
 import UIKit
 
 class EquationViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     @IBOutlet weak var tableViewOutlet: UITableView!
-   
+    var passedSubject = Subject()
     var ChemEquations = [Equation]()
     var BioEquations = [Equation]() //WARNING THIS PROBABLY WONT WORK ALONE MOIST LIKELY NEEDS AN IF STATEment
     override func viewDidLoad() {
@@ -87,28 +88,54 @@ class EquationViewController: UIViewController, UITableViewDelegate, UITableView
         let bioEquation18 = Equation(equiName: "Surface Area of a Sphere", equation: "A=4πr²")
         let bioEquation19 = Equation(equiName: "Surface Area of a Cube", equation: "A=6a")
         let bioEquation20 = Equation(equiName: "Surface Area of a Rectangular Solid", equation: "A=Σ")
-    
-    BioEquations = [bioEquation1,bioEquation2,bioEquation3,bioEquation4,bioEquation5,bioEquation6,bioEquation7,bioEquation8,bioEquation9,bioEquation10,bioEquation11,bioEquation12,bioEquation13,bioEquation14,bioEquation15,bioEquation16,bioEquation17,bioEquation18,bioEquation19,bioEquation20]
-    
         
-      if currentSubject = biology
-      {
+        BioEquations = [bioEquation1,bioEquation2,bioEquation3,bioEquation4,bioEquation5,bioEquation6,bioEquation7,bioEquation8,bioEquation9,bioEquation10,bioEquation11,bioEquation12,bioEquation13,bioEquation14,bioEquation15,bioEquation16,bioEquation17,bioEquation18,bioEquation19,bioEquation20]
         
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+}
+
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        if passedSubject.name == "Biology"
         {
             return BioEquations.count
         }
+        else if passedSubject.name == "Chemistry"
+        {
+            return ChemEquations.count
+        }
+        else {
+            return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        if passedSubject.name == "Biology"
+        {
         
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Equation Cell")
+        let currentSubject = BioEquations[indexPath.row]
+        cell?.textLabel?.text = currentSubject.equiName
+        cell?.detailTextLabel?.text = currentSubject.equation
+        return cell!
+        }
+    else if passedSubject.name == "Chemistry"
         {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Equation Cell")
-            let currentCollege = College[indexPath.row]
-            cell?.textLabel?.text = currentCollege.name
-            cell?.detailTextLabel?.text = 
-       return cell!
+            let currentSubject = ChemEquations[indexPath.row]
+            cell?.textLabel?.text = currentSubject.equiName
+            cell?.detailTextLabel?.text = currentSubject.equation
+            return cell!}
+        else
+        {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Equation Cell")
+            let currentSubject = BioEquations[indexPath.row]
+            cell?.textLabel?.text = currentSubject.equiName
+            cell?.detailTextLabel?.text = currentSubject.equation
+            return cell!
         }
-    
-        }
-        }
-    
+    }
 }
+ 
+

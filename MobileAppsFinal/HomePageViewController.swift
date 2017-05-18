@@ -22,5 +22,11 @@ class HomePageViewController: UIViewController {
         subjectLabel.text = selectedSubject.name
         
     }
-    
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nvc = segue.destination as! EquationViewController
+        
+        nvc.passedSubject = selectedSubject
+        
+    }
 }

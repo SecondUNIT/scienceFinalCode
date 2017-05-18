@@ -93,7 +93,7 @@
                                         <rect key="frame" x="14.5" y="271" width="68" height="30"/>
                                         <state key="normal" title="Equations"/>
                                         <connections>
-                                            <segue destination="1Sv-N6-0NE" kind="show" id="Y9f-Xh-EfV"/>
+                                            <segue destination="1Sv-N6-0NE" kind="show" identifier="EquationsSegue" id="Y9f-Xh-EfV"/>
                                         </connections>
                                     </button>
                                 </subviews>
