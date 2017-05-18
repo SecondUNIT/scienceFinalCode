@@ -40,6 +40,7 @@ class Element {
     
     init (name: String!, atomicNumber: Int!, atomicWeight: Float!, modelImage: UIImage!, infoUrl: String!)
     {
+        self.name = name
         self.atomicNumber = atomicNumber
         self.atomicWeight = atomicWeight
         self.modelImage = modelImage
@@ -47,6 +48,7 @@ class Element {
     }
     init ()
     {
+        name = "Spicy Boi"
         atomicNumber = 12
         atomicWeight = 12.001
         modelImage = #imageLiteral(resourceName: "hydrogen")

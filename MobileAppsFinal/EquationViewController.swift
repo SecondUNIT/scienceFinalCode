@@ -13,7 +13,8 @@ class EquationViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var tableViewOutlet: UITableView!
     var passedSubject = Subject()
     var ChemEquations = [Equation]()
-    var BioEquations = [Equation]() //WARNING THIS PROBABLY WONT WORK ALONE MOIST LIKELY NEEDS AN IF STATEment
+    var BioEquations = [Equation]() //WARNING THIS PROBABLY WONT WORK ALONE MOST LIKELY NEEDS AN "IF" STATEMENT
+    var PhyEquations = [Equation]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
