@@ -169,7 +169,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="tableViewOutlet" destination="sHN-l5-Vk7" id="vVU-Kt-gX7"/>
+                        <outlet property="tableViewOutlet" destination="sHN-l5-Vk7" id="6RL-MY-KT9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tjy-oX-XRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
