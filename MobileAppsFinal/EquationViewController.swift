@@ -9,11 +9,10 @@
 import UIKit
 
 class EquationViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
     @IBOutlet weak var tableViewOutlet: UITableView!
     var passedSubject = Subject()
     var ChemEquations = [Equation]()
-    var BioEquations = [Equation]() //WARNING THIS PROBABLY WONT WORK ALONE MOST LIKELY NEEDS AN "IF" STATEMENT
+    var BioEquations = [Equation]()
     var PhyEquations = [Equation]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,13 +87,33 @@ class EquationViewController: UIViewController, UITableViewDelegate, UITableView
         let bioEquation17 = Equation(equiName: "Volume of a Column", equation: "V=πr²h")
         let bioEquation18 = Equation(equiName: "Surface Area of a Sphere", equation: "A=4πr²")
         let bioEquation19 = Equation(equiName: "Surface Area of a Cube", equation: "A=6a")
-        let bioEquation20 = Equation(equiName: "Surface Area of a Rectangular Solid", equation: "A=Σ")
         
-        BioEquations = [bioEquation1,bioEquation2,bioEquation3,bioEquation4,bioEquation5,bioEquation6,bioEquation7,bioEquation8,bioEquation9,bioEquation10,bioEquation11,bioEquation12,bioEquation13,bioEquation14,bioEquation15,bioEquation16,bioEquation17,bioEquation18,bioEquation19,bioEquation20]
+        BioEquations = [bioEquation1,bioEquation2,bioEquation3,bioEquation4,bioEquation5,bioEquation6,bioEquation7,bioEquation8,bioEquation9,bioEquation10,bioEquation11,bioEquation12,bioEquation13,bioEquation14,bioEquation15,bioEquation16,bioEquation17,bioEquation18,bioEquation19]
         
-}
+
+
 
     
+        
+        let phyEquation1 = Equation(equiName: "Force", equation: "mass*acceleration")
+        let phyEquation2 = Equation(equiName: "Kinetic Energy", equation: "1/2*mass*velocity²")
+        let phyEquation3 = Equation(equiName: "Potential Energy", equation: "mass*gravity*height")
+        let phyEquation4 = Equation(equiName: "Work", equation: "force*distance")
+        let phyEquation5 = Equation(equiName: "Average Speed", equation: "totalDistance/totalTime")
+        let phyEquation6 = Equation(equiName: "Power", equation: "work/time")
+        let phyEquation7 = Equation(equiName: "Time", equation: "distance/averageSpeed")
+        let phyEquation8 = Equation(equiName: "Weight", equation: "mass*gravity")
+        let phyEquation9 = Equation(equiName: "%Efficiency", equation: "usefulWorkDone/totalEnergyUsed")
+        let phyEquation10 = Equation(equiName: "Acceleration", equation: "a=vf-vi/tf-ti")
+        let phyEquation11 = Equation(equiName: "Gravity", equation: "9.8*meters/second²")
+        let phyEquation12 = Equation(equiName: "Displacement", equation: "1/2*acceleration*time²")
+        let phyEquation13 = Equation(equiName: "Momentum", equation: "p=m*v")
+        let phyEquation14 = Equation(equiName: "FreeFall", equation: "9.8 m/s^2 * M")
+        let phyEquation15 = Equation(equiName: "Watt", equation: "joules/seconds")
+        let phyEquation16 = Equation(equiName: "Mechanical Advantage", equation: "F[output]/ F[imput]")
+    
+        PhyEquations = [phyEquation1, phyEquation2, phyEquation3, phyEquation4, phyEquation5, phyEquation6, phyEquation7, phyEquation8, phyEquation9, phyEquation10, phyEquation11, phyEquation12, phyEquation13, phyEquation14, phyEquation15, phyEquation16]
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         if passedSubject.name == "Biology"
@@ -106,9 +125,10 @@ class EquationViewController: UIViewController, UITableViewDelegate, UITableView
             return ChemEquations.count
         }
         else {
-            return 0
+            return PhyEquations.count
         }
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
@@ -131,12 +151,12 @@ class EquationViewController: UIViewController, UITableViewDelegate, UITableView
         else
         {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Equation Cell")
-            let currentSubject = BioEquations[indexPath.row]
+            let currentSubject = PhyEquations[indexPath.row]
             cell?.textLabel?.text = currentSubject.equiName
             cell?.detailTextLabel?.text = currentSubject.equation
             return cell!
         }
-    }
+            }
 }
- 
+
 
