@@ -9,10 +9,12 @@
 import UIKit
 
 class EquationProfileViewController: UIViewController {
+    @IBOutlet weak var equationLabel: UILabel!
 
+    var passedEquation = Equation()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        equationLabel.text = "\(passedEquation.equation!)"
     }
 
 }

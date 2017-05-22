@@ -157,6 +157,23 @@ class EquationViewController: UIViewController, UITableViewDelegate, UITableView
             return cell!
         }
             }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let nvc = segue.destination as! EquationProfileViewController
+        var currentEquation = ChemEquations[(tableViewOutlet.indexPathForSelectedRow?.row)!]
+        if passedSubject.name == "Biology"
+        {
+             currentEquation = BioEquations[(tableViewOutlet.indexPathForSelectedRow?.row)!]
+        }
+        else if passedSubject.name == "Physics"
+        {
+             currentEquation = PhyEquations[(tableViewOutlet.indexPathForSelectedRow?.row)!]
+        }
+        else {
+             currentEquation = ChemEquations[(tableViewOutlet.indexPathForSelectedRow?.row)!]
+        }
+        nvc.passedEquation = currentEquation
+    }
 }
 
 
