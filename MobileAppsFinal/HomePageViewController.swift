@@ -17,9 +17,9 @@ class HomePageViewController: UIViewController {
     @IBOutlet weak var secretLabel: UILabel!
     
     var selectedSubject = Subject()
-    var topLeft = true
-    var topRight = true
-    var bottomLeft = true
+    var topLeft = false
+    var topRight = false
+    var bottomLeft = false
     override func viewDidLoad() {
         super.viewDidLoad()
         secretImageView.alpha = 0
@@ -64,20 +64,35 @@ class HomePageViewController: UIViewController {
     }
     
     @IBAction func whenTRButtonTapped(_ sender: Any) {
-        topRight = true
+        if topLeft == true{
+           topRight = true
+        }else{
+            topRight = false
+        }
+        
     }
     
     @IBAction func whenBLTapped(_ sender: Any) {
-        bottomLeft = true
+        if topLeft == true && topRight == true{
+            bottomLeft = true
+        }else{
+        bottomLeft = false
+            
+        }
     }
     @IBAction func whenBRTapped(_ sender: Any) {
         if topLeft == true && topRight == true && bottomLeft == true
         {
             secretLabel.alpha = 1
+            secretLabel.text = "By finding this secretive Egg of Easter, the Mild Bobby Sauce has granted thou with prosperity and a lack of ouchies when consuming sauce of the spicy variety."
             secretImageView.alpha = 1
         }
         else {
-            secretLabel.alpha = 0
+            topLeft = false
+            topRight = false
+            bottomLeft = false
+            secretLabel.alpha = 1
+            secretLabel.text = "YOUR FEEBLE ATTEMPTS AT LOCATING THIS VERY EGG OF EASTER WILL LEAVE YOU WITH ABOSLUTELY NOTHING EXCEPT THE STENCH OF FAILURE UPON YOUR SOUL! MAY YOU AND YOUR BLOODLINE BE ETERNALLY CURSED WITH THE GREATEST OF OUCHIES WHEN CONSUMING SAUCE OF THE SPICY VARIETY!"
             secretImageView.alpha = 0
             
         }
