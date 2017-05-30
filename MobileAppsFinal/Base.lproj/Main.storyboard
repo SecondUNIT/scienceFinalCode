@@ -229,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tjy-oX-XRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2425.78125" y="759.9609375"/>
+            <point key="canvasLocation" x="2388" y="760"/>
         </scene>
         <!--Equation Profile View Controller-->
         <scene sceneID="z0a-Kw-fyr">
@@ -281,7 +281,7 @@
                                         <rect key="frame" x="0.0" y="28" width="768" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vbz-pK-IFb" id="fTR-dR-FjL">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -365,7 +365,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kxw-Pl-Bc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3158" y="-498"/>
+            <point key="canvasLocation" x="3147" y="-505"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nge-bv-yw7">

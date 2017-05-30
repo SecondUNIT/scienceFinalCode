@@ -51,10 +51,14 @@ class HomePageViewController: UIViewController {
         }
         else {
             let nvc = segue.destination as!EquationViewController
+            nvc.passedSubject = selectedSubject
         }
-        //        nvc.passedSubject = selectedSubject
+        
         
     }
+    
+    
+    
     @IBAction func whenTLButtonTapped(_ sender: Any) {
         topLeft = true
     }
