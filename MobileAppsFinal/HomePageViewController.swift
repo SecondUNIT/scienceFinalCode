@@ -86,15 +86,16 @@ class HomePageViewController: UIViewController {
             secretLabel.alpha = 1
             secretLabel.text = "By finding this secretive Egg of Easter, the Mild Bobby Sauce has granted thou with prosperity and a lack of ouchies when consuming sauce of the spicy variety."
             secretImageView.alpha = 1
-        }
+                    }
         else {
             topLeft = false
             topRight = false
             bottomLeft = false
             secretLabel.alpha = 1
             secretLabel.text = "YOUR FEEBLE ATTEMPTS AT LOCATING THIS VERY EGG OF EASTER WILL LEAVE YOU WITH ABOSLUTELY NOTHING EXCEPT THE STENCH OF FAILURE UPON YOUR SOUL! MAY YOU AND YOUR BLOODLINE BE ETERNALLY CURSED WITH THE GREATEST OF OUCHIES WHEN CONSUMING SAUCE OF THE SPICY VARIETY!"
-            secretImageView.alpha = 0
-            
+            secretImageView.alpha = 1
+            secretImageView.image = #imageLiteral(resourceName: "Bobbo Lobbo")
+
         }
     }
     
