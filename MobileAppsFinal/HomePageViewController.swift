@@ -86,6 +86,7 @@ class HomePageViewController: UIViewController {
             secretLabel.alpha = 1
             secretLabel.text = "By finding this secretive Egg of Easter, the Mild Bobby Sauce has granted thou with prosperity and a lack of ouchies when consuming sauce of the spicy variety."
             secretImageView.alpha = 1
+            secretImageView.image = #imageLiteral(resourceName: "bobby sauce")
                     }
         else {
             topLeft = false
