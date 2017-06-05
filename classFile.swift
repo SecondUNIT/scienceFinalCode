@@ -37,14 +37,16 @@ class Element {
     var atomicWeight: Float!
     var modelImage: UIImage!
     var infoUrl: String!
+    var isRadioactive: Bool!
     
-    init (name: String!, atomicNumber: Int!, atomicWeight: Float!, modelImage: UIImage!, infoUrl: String!)
+    init (name: String!, atomicNumber: Int!, atomicWeight: Float!, modelImage: UIImage!, infoUrl: String!, isRadioactive: Bool!)
     {
         self.name = name
         self.atomicNumber = atomicNumber
         self.atomicWeight = atomicWeight
         self.modelImage = modelImage
         self.infoUrl = infoUrl
+        self.isRadioactive = isRadioactive
     }
     init ()
     {
@@ -53,6 +55,7 @@ class Element {
         atomicWeight = 12.001
         modelImage = #imageLiteral(resourceName: "hydrogen")
         infoUrl = "Jamm Samsa"
+        isRadioactive = true
     }
 }
 
