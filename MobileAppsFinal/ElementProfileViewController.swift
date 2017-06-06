@@ -15,11 +15,15 @@ class ElementProfileViewController: UIViewController {
     @IBOutlet weak var elementNameLabel: UILabel!
     @IBOutlet weak var atomicNumberLabel: UILabel!
     @IBOutlet weak var atomicWeightLabel: UILabel!
+    @IBOutlet var ElementVC: UIView!
     
     
     var passedElement = Element()
     override func viewDidLoad() {
         super.viewDidLoad()
+        if passedElement.isRadioactive == true{
+            ElementVC.backgroundColor = UIColor.green
+        }
         modelImageView.image = passedElement.modelImage
         elementNameLabel.text = passedElement.name
         atomicNumberLabel.text = "\(passedElement.atomicNumber!)"
